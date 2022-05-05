@@ -1,0 +1,36 @@
+{
+  "name": "codechallenge",
+  "version": "1.0.0",
+  "description": "Reto para aplicar todo lo aprendido hasta la semana 4 de la mission backend de Launch X",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elchicogamer117/codeChallenge.git"
+  },
+  "keywords": [
+    "TDD",
+    "database",
+    "modularizacion",
+    "linter",
+    "API",
+    "nodejs",
+    "express"
+  ],
+  "author": "elchicogamer117",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elchicogamer117/codeChallenge/issues"
+  },
+  "homepage": "https://github.com/Elchicogamer117/codeChallenge#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^28.0.3",
+    "supertest": "^6.2.3"
+  }
+}
