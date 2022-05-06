@@ -9,7 +9,7 @@ describe("Test for partner controller", () => {
 
 	test("2) Get emails from certified students", () => {
 		const emailsCertifiedStudents = partnerController.getEmailsCertifiedStudents();
-		expect(emailsCertifiedStudents.length).toBe(29)
+		expect(emailsCertifiedStudents.length).toBe(29);
 	});
 
 	test("3) Get student with credits over 500", () => {

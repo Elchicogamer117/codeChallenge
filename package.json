@@ -4,7 +4,9 @@
   "description": "Reto para aplicar todo lo aprendido hasta la semana 4 de la mission backend de Launch X",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/jest/bin/jest.js"
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
