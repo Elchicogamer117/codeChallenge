@@ -11,17 +11,17 @@ app.get("/",(request, response) => {
 });
 
 app.get("/v1/visualpartners",(request, response) => {
-	const partnerList = partnerController.getAllExplorers()
+	const partnerList = partnerController.getAllExplorers();
 	response.json(partnerList);
 });
 
 app.get("/v1/visualpartners/certified",(request, response) => {
-	const emailsCertifiedPartners = partnerController.getEmailsCertifiedStudents()
+	const emailsCertifiedPartners = partnerController.getEmailsCertifiedStudents();
 	response.json(emailsCertifiedPartners);
 });
 
-app.get("/v1/explorers/partners/500",(request, response) => {
-	const superiorCreditsPartners = partnerController.getSuperiorCreditsStudents()
+app.get("/v1/visualpartners/500",(request, response) => {
+	const superiorCreditsPartners = partnerController.getSuperiorCreditsStudents();
 	response.json(superiorCreditsPartners);
 });
 

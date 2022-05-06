@@ -21,7 +21,7 @@ describe("Test for server", () =>{
 		finish();
 	});
 	test("4) Endpoint 3: Partners with credits over 500", async () => {
-		const response = await request(app).get("/v1/explorers/partners/500");
+		const response = await request(app).get("/v1/visualpartners/500");
 		expect(response.body.length).toBe(26);
 		expect(response.statusCode).toBe(200);
 		finish();
