@@ -6,9 +6,12 @@ describe("Test for partner service", () => {
 		const visualPartners = reader.readJsonFile("visualPartners.test.json");
             const emailStudents = partnerService.emailsCertifiedStudents(visualPartners)
             
-            for(let partner of emailStudents){
-                  expect(partner.haveCertification).toBe(true);
-            }
+            expect(emailStudents).toContain("Montoya@visualpartnership.xyz")
+            expect(emailStudents).toContain("Rosemary@visualpartnership.xyz")
+            expect(emailStudents).toContain("Mcpherson@visualpartnership.xyz")
+            expect(emailStudents).not.toContain("Landry@visualpartnership.xyz")
+            expect(emailStudents).not.toContain("Kerri@visualpartnership.xyz")
+            expect(emailStudents).not.toContain("Marie@visualpartnership.xyz")
 	});
 
 	test("2) Get students with credits over 500", () => {
