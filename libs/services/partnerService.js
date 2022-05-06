@@ -1,6 +1,5 @@
 class partnerService {
       static emailsCertifiedStudents(visualPartners){
-      //const certifiedStudents = visualPartners.map(partner => partner.haveCertification = true)
             const  certifiedStudents = visualPartners.filter((partner) => partner.haveCertification === true)
             return certifiedStudents.map( partner => partner.email)
       }
