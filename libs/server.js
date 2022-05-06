@@ -21,7 +21,7 @@ app.get("/v1/visualpartners/certified",(request, response) => {
 });
 
 app.get("/v1/visualpartners/500",(request, response) => {
-	const superiorCreditsPartners = partnerController.getSuperiorCreditsStudents();
+	const superiorCreditsPartners = partnqerController.getSuperiorCreditsStudents();
 	response.json(superiorCreditsPartners);
 });
 
